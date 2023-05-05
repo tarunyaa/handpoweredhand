@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=megaatmega2560 -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Mega" -B "/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Mega/cmake-build-megaatmega2560"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Mega/cmake-build-megaatmega2560

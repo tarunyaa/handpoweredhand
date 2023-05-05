@@ -1,0 +1,191 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: ESE3500 Final Nano
+# Configurations: nanoatmega328
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = nanoatmega328
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/isabelsong/Desktop/Spring$ 2023/ESE3500$ Final$ Nano/cmake-build-nanoatmega328/
+
+#############################################
+# Utility command for Production
+
+build Production: phony CMakeFiles/Production
+
+
+#############################################
+# Utility command for Debug
+
+build Debug: phony CMakeFiles/Debug
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Z_DUMMY_TARGET
+
+
+#############################################
+# Order-only phony target for Z_DUMMY_TARGET
+
+build cmake_object_order_depends_target_Z_DUMMY_TARGET: phony || CMakeFiles/Z_DUMMY_TARGET.dir
+
+build CMakeFiles/Z_DUMMY_TARGET.dir/src/adc.c.obj: C_COMPILER__Z_DUMMY_TARGET_nanoatmega328 /Users/isabelsong/Desktop/Spring$ 2023/ESE3500$ Final$ Nano/src/adc.c || cmake_object_order_depends_target_Z_DUMMY_TARGET
+  DEFINES = -DARDUINO=10808 -DARDUINO_ARCH_AVR -DARDUINO_AVR_NANO -DF_CPU=16000000L -DPLATFORMIO=60106 -D__AVR_ATmega328P__
+  DEP_FILE = CMakeFiles/Z_DUMMY_TARGET.dir/src/adc.c.obj.d
+  FLAGS = -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328p -Os -Wall -ffunction-sections -fdata-sections -flto -std=gnu11
+  INCLUDES = -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/include" -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/src" -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/HID/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/avr/include
+  OBJECT_DIR = CMakeFiles/Z_DUMMY_TARGET.dir
+  OBJECT_FILE_DIR = CMakeFiles/Z_DUMMY_TARGET.dir/src
+
+build CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.obj: C_COMPILER__Z_DUMMY_TARGET_nanoatmega328 /Users/isabelsong/Desktop/Spring$ 2023/ESE3500$ Final$ Nano/src/main.c || cmake_object_order_depends_target_Z_DUMMY_TARGET
+  DEFINES = -DARDUINO=10808 -DARDUINO_ARCH_AVR -DARDUINO_AVR_NANO -DF_CPU=16000000L -DPLATFORMIO=60106 -D__AVR_ATmega328P__
+  DEP_FILE = CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.obj.d
+  FLAGS = -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328p -Os -Wall -ffunction-sections -fdata-sections -flto -std=gnu11
+  INCLUDES = -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/include" -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/src" -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/HID/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/avr/include
+  OBJECT_DIR = CMakeFiles/Z_DUMMY_TARGET.dir
+  OBJECT_FILE_DIR = CMakeFiles/Z_DUMMY_TARGET.dir/src
+
+build CMakeFiles/Z_DUMMY_TARGET.dir/src/nrf24.c.obj: C_COMPILER__Z_DUMMY_TARGET_nanoatmega328 /Users/isabelsong/Desktop/Spring$ 2023/ESE3500$ Final$ Nano/src/nrf24.c || cmake_object_order_depends_target_Z_DUMMY_TARGET
+  DEFINES = -DARDUINO=10808 -DARDUINO_ARCH_AVR -DARDUINO_AVR_NANO -DF_CPU=16000000L -DPLATFORMIO=60106 -D__AVR_ATmega328P__
+  DEP_FILE = CMakeFiles/Z_DUMMY_TARGET.dir/src/nrf24.c.obj.d
+  FLAGS = -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328p -Os -Wall -ffunction-sections -fdata-sections -flto -std=gnu11
+  INCLUDES = -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/include" -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/src" -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/HID/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/avr/include
+  OBJECT_DIR = CMakeFiles/Z_DUMMY_TARGET.dir
+  OBJECT_FILE_DIR = CMakeFiles/Z_DUMMY_TARGET.dir/src
+
+build CMakeFiles/Z_DUMMY_TARGET.dir/src/uart.c.obj: C_COMPILER__Z_DUMMY_TARGET_nanoatmega328 /Users/isabelsong/Desktop/Spring$ 2023/ESE3500$ Final$ Nano/src/uart.c || cmake_object_order_depends_target_Z_DUMMY_TARGET
+  DEFINES = -DARDUINO=10808 -DARDUINO_ARCH_AVR -DARDUINO_AVR_NANO -DF_CPU=16000000L -DPLATFORMIO=60106 -D__AVR_ATmega328P__
+  DEP_FILE = CMakeFiles/Z_DUMMY_TARGET.dir/src/uart.c.obj.d
+  FLAGS = -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328p -Os -Wall -ffunction-sections -fdata-sections -flto -std=gnu11
+  INCLUDES = -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/include" -I"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/src" -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/HID/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src -I/Users/isabelsong/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed -I/Users/isabelsong/.platformio/packages/toolchain-atmelavr/avr/include
+  OBJECT_DIR = CMakeFiles/Z_DUMMY_TARGET.dir
+  OBJECT_FILE_DIR = CMakeFiles/Z_DUMMY_TARGET.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Z_DUMMY_TARGET
+
+
+#############################################
+# Link the executable Z_DUMMY_TARGET
+
+build Z_DUMMY_TARGET: C_EXECUTABLE_LINKER__Z_DUMMY_TARGET_nanoatmega328 CMakeFiles/Z_DUMMY_TARGET.dir/src/adc.c.obj CMakeFiles/Z_DUMMY_TARGET.dir/src/main.c.obj CMakeFiles/Z_DUMMY_TARGET.dir/src/nrf24.c.obj CMakeFiles/Z_DUMMY_TARGET.dir/src/uart.c.obj
+  FLAGS = -std=gnu11 -fno-fat-lto-objects -mmcu=atmega328p -Os -Wall -ffunction-sections -fdata-sections -flto
+  OBJECT_DIR = CMakeFiles/Z_DUMMY_TARGET.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Z_DUMMY_TARGET
+  TARGET_PDB = Z_DUMMY_TARGET.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/cmake-build-nanoatmega328" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/cmake-build-nanoatmega328" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano" -B"/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/cmake-build-nanoatmega328"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for CMakeFiles/Production
+
+build CMakeFiles/Production | ${cmake_ninja_workdir}CMakeFiles/Production: CUSTOM_COMMAND
+  COMMAND = cd "/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano" && platformio -c clion run -enanoatmega328
+
+
+#############################################
+# Custom command for CMakeFiles/Debug
+
+build CMakeFiles/Debug | ${cmake_ninja_workdir}CMakeFiles/Debug: CUSTOM_COMMAND
+  COMMAND = cd "/Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano" && platformio -c clion debug -enanoatmega328
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/isabelsong/Desktop/Spring 2023/ESE3500 Final Nano/cmake-build-nanoatmega328
+
+build all: phony Production Debug Z_DUMMY_TARGET
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../CMakeListsPrivate.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../CMakeListsPrivate.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
