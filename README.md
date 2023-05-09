@@ -4,4 +4,4 @@ Code is uploaded separately to the transmitting (Nano) and receiving (Mega) micr
 
 See our Devpost for more information!
 
-https://devpost.com/software/hand-powered-hand?ref_content=my-projects-tab&ref_feature=my_projects
+https://devpost.com/software/hand-powered-hand
